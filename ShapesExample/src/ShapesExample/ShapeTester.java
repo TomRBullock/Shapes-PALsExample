@@ -21,11 +21,11 @@ public class ShapeTester {
         System.out.println(s1.getType() + " : " + s1.getArea() + " : " + s1.getColor());
         System.out.println(s2.getType() + " : " + s2.getArea() + " : " + s2.getColor());
         
-        Triangle t1 = new Triangle(Color.PINK, 4.5,6);
-        Triangle t2 = new Triangle(Color.WHITE, 10, 3);
+        Triangle t1 = new Triangle(Color.PINK, 4.5,6,45);
+        Triangle t2 = new Triangle(Color.WHITE, 3,4, 90);
         
-        System.out.println(t1.getType() + " : " + t1.getArea() + " : " + t1.getColor());
-        System.out.println(t2.getType() + " : " + t2.getArea() + " : " + t2.getColor());
+        System.out.println(t1.getType() + " : " + t1.getArea() + " : " + t1.getColor() + " : " +t1.printAngles());
+        System.out.println(t2.getType() + " : " + t2.getArea() + " : " + t2.getHypo() +" : " + t2.getColor() +" : " + t2.printAngles());
         
    }
 }
